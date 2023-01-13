@@ -1,0 +1,54 @@
+<style>
+
+.toggle-ad-examples-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-ad-examples-button {
+    background: #D60029;
+    font-family: montserrat;
+}
+
+.toggle-ad-examples-button:hover {
+    background: #000;
+}
+
+#ad-examples-section {
+    display: none;
+}
+
+</style>
+
+
+<div class = "toggle-ad-examples-button-container">
+
+<button id = "toggle-ad-examples-button" class = "toggle-ad-examples-button">
+    See More Examples
+</button>
+
+</div>
+
+
+<script> 
+
+    const adToggleButton = document.getElementById("toggle-ad-examples-button");
+    const adExampleSection = document.getElementById("ad-examples-section");
+
+    adToggleButton.addEventListener("click", showAdExamples);
+
+    function showAdExamples() {
+        if (adExampleSection.style.display === "none";) {
+            adExampleSection.style.display = "block";
+            adToggleButton.innerHTML = "Close Ad Examples";
+
+        } else {
+            adExampleSection.style.display === "none";
+            adToggleButton.innerHTML = "See More Examples";
+
+        }
+        
+
+</script>
